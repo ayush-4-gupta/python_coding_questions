@@ -71,5 +71,12 @@ class Animal:
 
 #  CLASS M SIRF INSTANCE METHOD HI BNTE H KYUKI  JB BHI KOI FUNCTION DECLARE KRTE H CLASS M TO USME SELF PASS KRNE SE INSTANCE CREATE HO JATA H 
 
-#  self targets the instace
+#  self targets the  object location/instace
+
+    @classmethod
+    def hello(cls):
+        print("how are you?")
+
+
+# here cls targets the class location
 
