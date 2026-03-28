@@ -59,3 +59,46 @@ hello(2,7)
 ####  TERNARY OPERATOR AND LIST COMPREHENSION
 a=13
 print("even") if a%2==0 else print("odd")
+
+
+
+####  TERNARY OPERATOR AND LIST COMPREHENSION
+a=13
+print("even") if a%2==0 else print("odd")
+ 
+l=[i for i in range(1,21) if i%2==0 ]
+print(l)
+
+
+m= { j:j**2 for j in range(1,10)}
+print(m)
+
+
+
+#  LAMBDA FUNCTION=================== 
+addition=lambda a,b:a+b
+print(addition(2,3 ))
+
+
+check=lambda a: "even" if a%2==0 else "odd"
+print(check(4))
+
+# =========MAP========
+a=[2,234,53,54,3,45,3,2,6]
+square=map(lambda x:x**2,a)
+print(list(square))
+
+# FILTER=========================
+x=[2,234,53,54,3,45,3,2,6]
+def even(x):
+    if x%2==0:
+        return True
+    else:
+        return False
+fil=filter(even,a )
+print(list(fil))
+
+
+
+result=filter(lambda x:True if x%2==0 else False,x)
+print(list(result))
